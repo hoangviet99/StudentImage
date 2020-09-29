@@ -3,6 +3,7 @@ $(document).ready(function(){
         var id = $("#studentId").val();
         var linkImg = "http://online.dlu.edu.vn/HinhSV/" + id + ".jpg";
         alert(linkImg);
-        $("#studentImage").attr("src", linkImg);
+        document.getElementById("studentImage").src = linkImg;
+        //$("#studentImage").attr("src", linkImg);
     })
 })

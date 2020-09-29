@@ -4,6 +4,6 @@ $(document).ready(function(){
         var linkImg = "http://online.dlu.edu.vn/HinhSV/" + id + ".jpg";
         var outerHTML = '<img id="studentImage" alt="Sinh viên này méo có ảnh nhé!" src="' + linkImg + '">';
         $("#studentImage")[0].outerHTML = outerHTML;
-        alert(outerHTML);
+        $("#link").text(linkImg);
     })
 })

@@ -1,0 +1,54 @@
+body{
+    background-image: url("./Images/bg.jpg");
+}
+
+.content{
+    width: 500px;
+    border-style: solid;
+    border-color: rgba(0, 65, 255, 0.2);
+    border-radius: 10px;
+    margin: 0px auto;
+    background-color: rgba(162, 180, 255, 0.2);
+    padding: 10px;
+}
+
+#title{
+    color: darkred;
+    border-width: 3px;
+    border-color: white;
+    text-align: center;
+}
+
+.content div.row{
+    margin-top: 20px;
+}
+
+.content div.row span{
+    display: inline-block;
+    width: 180px;
+    text-align: right;
+}
+
+.content div.row input[type=text]{
+    padding: 3px 5px;
+}
+
+.content div.row input[type=button]{
+    padding: 3px 5px;
+    display: block;
+    margin: 0px auto 20px auto;
+    color: white;
+    background-color: #2e388e69;
+    border-radius: 5px;;
+}
+
+.content div.row p{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#studentImage{
+    display: flex;
+    margin: 0px auto;
+}

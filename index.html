@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" type="text/javascript"></script>
     <title>Troll nào :vv</title>
 </head>
 <body>
@@ -20,13 +22,5 @@
             <img id="studentImage" alt="Sinh viên này méo có ảnh nhé!" src="https://icons.iconarchive.com/icons/iloveicons.ru/browser-girl/128/browser-girl-safari-icon.png">
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $('input[type="button"]').click(function(){
-            var id = $("#studentId").val();
-            var linkImg = "http://online.dlu.edu.vn/HinhSV/" + id + ".jpg";
-            $("#studentImage").attr("src", linkImg);
-        })
-    </script>
 </body>
 </html>

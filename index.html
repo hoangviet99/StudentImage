@@ -14,18 +14,19 @@
             <input type="text" id="studentId" name="studentId" placeholder="Nhập vào mã số sinh viên" value="">
         </div>
         <div class="row">
-            <input type="button" name="displayResult" value="Tìm nào :vv" onclick="getImage()">
+            <input type="button" name="displayResult" value="Tìm nào :vv">
         </div>
         <div class="row">
             <img id="studentImage" alt="Sinh viên này méo có ảnh nhé!" src="https://icons.iconarchive.com/icons/iloveicons.ru/browser-girl/128/browser-girl-safari-icon.png">
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
-        function getImage() {
-            var id = document.getElementById("studentId").value;
-            var linkImg = `http://online.dlu.edu.vn/HinhSV/${id}.jpg`;
-            document.getElementById("studentImage").src = linkImg;
-        }
+        $('input[type="button"]').click(function(){
+            var id = $("#studentId").val();
+            var linkImg = "http://online.dlu.edu.vn/HinhSV/" + id + ".jpg";
+            $("#studentImage").attr("src", linkImg);
+        })
     </script>
 </body>
 </html>
